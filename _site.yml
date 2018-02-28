@@ -1,0 +1,17 @@
+name: "BDS website"
+output_dir: "."
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text:  "Me"
+      href: aboutme.html
+    - text: "Pet"
+      href: pets.html
+      
+output: 
+  html_document: 
+    theme: cosmo
