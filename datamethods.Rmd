@@ -2,9 +2,20 @@
 title: "Data and Methods"
 ---
 
-More about this website. 
+The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011. 
+
+Variables analyzed from the year 2011 are as follows, 
+* Frisked (Y/N)
+* Sex (M/F/Z)
+* Race (Asian, Black, White, etc.)
+* Age of individual
+
+The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age. 
+
+Below is the r code for each variable tested in correlation with murder rates. 
 
 
 ```{r}
 wilcox.test(Hbihai, HCaribaeaRed, conf.int = T)
 ```
+
