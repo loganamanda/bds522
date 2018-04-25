@@ -1,5 +1,5 @@
 ---
-title: "BDS522 Mandy's Website"
+title: "Introduction"
 ---
 
 **Hello, World this is me! I am Master Mandy**
