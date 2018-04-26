@@ -4,7 +4,7 @@ title: "Introduction"
 
 **Is there a correation between murder rate by precinct and the number of frisks the following year?**
 
-New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". 
+New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". This was a controversial law enforcement practice due to the high percentage of minority races being the target of these endeavors. Blacks made up approximately 51.1% of the population considered in this dataset. Young men were also disproportionately targeted. Men overall made up 91.4% of the population in New York City that were part of this dataset just in the year of 2011. 
 
 
 

@@ -209,31 +209,65 @@ $(document).ready(function () {
 <p>The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011.</p>
 <p>Variables analyzed from the year 2011 are as follows,</p>
 <ul>
-<li>Frisked (Y/N)</li>
-<li>Sex (M/F/Z)</li>
-<li>Race (Asian, Black, White, etc.)</li>
-<li>Age of individual</li>
+<li>Frisked (Y/N)*</li>
+<li>Sex (M/F/Z)*</li>
+<li>Race (Asian, Black, White, etc.)*</li>
+<li>Age of individual*</li>
 </ul>
 <p>The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age.</p>
 <p>Below is the r code for each variable tested in correlation with murder rates.</p>
+<p>Overall Race Breakdown:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Race</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asian</td>
+<td>3.5%</td>
+</tr>
+<tr class="even">
+<td>Black</td>
+<td>51.1%</td>
+</tr>
+<tr class="odd">
+<td>I</td>
+<td>&gt; 1%</td>
+</tr>
+<tr class="even">
+<td>Pacific Islanders</td>
+<td>7.1%</td>
+</tr>
+<tr class="odd">
+<td>Q</td>
+<td>25.6%</td>
+</tr>
+<tr class="even">
+<td>U</td>
+<td>&gt; 1%</td>
+</tr>
+<tr class="odd">
+<td>White</td>
+<td>9%</td>
+</tr>
+<tr class="even">
+<td>Z</td>
+<td>2.4%</td>
+</tr>
+</tbody>
+</table>
 <pre class="r"><code>barplot(RacePlot)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>wilcox.test(Hbihai, HCaribaeaRed, conf.int = T)</code></pre>
-<pre><code>## Warning in wilcox.test.default(Hbihai, HCaribaeaRed, conf.int = T): cannot
-## compute exact p-value with ties</code></pre>
-<pre><code>## Warning in wilcox.test.default(Hbihai, HCaribaeaRed, conf.int = T): cannot
-## compute exact confidence intervals with ties</code></pre>
-<pre><code>## 
-##  Wilcoxon rank sum test with continuity correction
-## 
-## data:  Hbihai and HCaribaeaRed
-## W = 368, p-value = 1.61e-07
-## alternative hypothesis: true location shift is not equal to 0
-## 95 percent confidence interval:
-##  6.889985 9.149908
-## sample estimates:
-## difference in location 
-##               8.355539</code></pre>
+<p>*KEY:</p>
+<ul>
+<li>Frisked: Y-yes; N-no</li>
+<li>Sex: M-male; F-female; Z- Not available</li>
+<li>Race: A- Asian; B- Black; I- Indian; P- ; Q- ; U- ; W- White; Z- Not avialable</li>
+<li>Age: By number</li>
+</ul>
 
 
 

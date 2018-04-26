@@ -6,20 +6,34 @@ The source of the following data analysis is from New York City crime dataset av
 
 Variables analyzed from the year 2011 are as follows, 
 
-* Frisked (Y/N)
-* Sex (M/F/Z)
-* Race (Asian, Black, White, etc.)
-* Age of individual
+* Frisked (Y/N)*
+* Sex (M/F/Z)*
+* Race (Asian, Black, White, etc.)*
+* Age of individual*
 
 The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age. 
 
 Below is the r code for each variable tested in correlation with murder rates. 
 
+Overall Race Breakdown: 
+
+Race                    |  Percentage 
+---------               | -----------
+Asian                   | 3.5% 
+Black                   | 51.1%
+I                       | > 1% 
+Pacific Islanders       | 7.1%
+Q                       | 25.6%
+U                       | > 1%
+White                   | 9% 
+Z                       | 2.4%
 ```{r}
 barplot(RacePlot)
-```
+``` 
 
-```{r}
-wilcox.test(Hbihai, HCaribaeaRed, conf.int = T)
-```
+*KEY: 
 
+* Frisked: Y-yes; N-no
+* Sex: M-male; F-female; Z- Not available 
+* Race: A- Asian; B- Black; I- Indian; P- ; Q- ; U- ; W- White; Z- Not avialable
+* Age: By number 
