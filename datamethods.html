@@ -207,12 +207,18 @@ $(document).ready(function () {
 
 
 <p>The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011.</p>
+<p>Variable analyzed from the year 2010,</p>
+<ul>
+<li>Murder rates</li>
+</ul>
+<pre class="r"><code>hist(MurderRates2010ALLPCT)</code></pre>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Variables analyzed from the year 2011 are as follows,</p>
 <ul>
 <li>Frisked (Y/N)*</li>
 <li>Sex (M/F/Z)*</li>
 <li>Race (Asian, Black, White, etc.)*</li>
-<li>Age of individual*</li>
+<li>Age</li>
 </ul>
 <p>The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age.</p>
 <p>Below is the r code for each variable tested in correlation with murder rates.</p>
@@ -260,7 +266,7 @@ $(document).ready(function () {
 </tbody>
 </table>
 <pre class="r"><code>barplot(RacePlot)</code></pre>
-<p><img src="datamethods_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p><strong>Overall Sex Breakdown</strong></p>
 <table>
 <thead>
@@ -285,7 +291,7 @@ $(document).ready(function () {
 </tbody>
 </table>
 <pre class="r"><code>barplot(GenderPlot)</code></pre>
-<p><img src="datamethods_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p><strong>Overall Frisked Breakdown</strong></p>
 <table>
 <thead>
@@ -306,7 +312,7 @@ $(document).ready(function () {
 </tbody>
 </table>
 <pre class="r"><code>barplot(FriskedPlot)</code></pre>
-<p><img src="datamethods_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>*KEY:</p>
 <ul>
 <li>Frisked: Y-yes; N-no</li>
