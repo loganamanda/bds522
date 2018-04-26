@@ -7,5 +7,15 @@ title: "Introduction"
 New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". This was a controversial law enforcement practice due to the high percentage of minority races being the target of these endeavors. Blacks made up approximately 51.1% of the population considered in this dataset. Young men were also disproportionately targeted. Men overall made up 91.4% of the population in New York City that were part of this dataset just in the year of 2011. 
 
 
+Link for the 2011 file for variables in relation to the Stop-question-frisk analysis: 
+
+http://www1.nyc.gov/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2011-csv.zip 
+
+Link for murder rates in New York City: 
+
+Citywide Non-Seven Major Felony Offenses 2000-2017 [PDF - Excel]
+
+*Avialable on, http://www1.nyc.gov/site/nypd/stats/crime-statistics/historical.page
+
 
 
