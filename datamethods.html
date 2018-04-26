@@ -216,7 +216,7 @@ $(document).ready(function () {
 </ul>
 <p>The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age.</p>
 <p>Below is the r code for each variable tested in correlation with murder rates.</p>
-<p>Overall Race Breakdown:</p>
+<p><strong>Overall Race Breakdown</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -234,7 +234,7 @@ $(document).ready(function () {
 <td>51.1%</td>
 </tr>
 <tr class="odd">
-<td>I</td>
+<td>Indian</td>
 <td>&gt; 1%</td>
 </tr>
 <tr class="even">
@@ -254,13 +254,59 @@ $(document).ready(function () {
 <td>9%</td>
 </tr>
 <tr class="even">
-<td>Z</td>
+<td>Z(Not Stated)</td>
 <td>2.4%</td>
 </tr>
 </tbody>
 </table>
 <pre class="r"><code>barplot(RacePlot)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><strong>Overall Sex Breakdown</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sex</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Male</td>
+<td>91.1%</td>
+</tr>
+<tr class="even">
+<td>Female</td>
+<td>6.8%</td>
+</tr>
+<tr class="odd">
+<td>Z(Not Stated)</td>
+<td>1.8%</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>barplot(GenderPlot)</code></pre>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><strong>Overall Frisked Breakdown</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Frisked</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Yes</td>
+<td>55.7%</td>
+</tr>
+<tr class="even">
+<td>No</td>
+<td>44.3%</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>barplot(FriskedPlot)</code></pre>
+<p><img src="datamethods_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>*KEY:</p>
 <ul>
 <li>Frisked: Y-yes; N-no</li>

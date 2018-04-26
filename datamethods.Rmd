@@ -15,21 +15,49 @@ The units of analysis for this project are by precinct for murder rates, frisked
 
 Below is the r code for each variable tested in correlation with murder rates. 
 
-Overall Race Breakdown: 
+**Overall Race Breakdown**
 
 Race                    |  Percentage 
 ---------               | -----------
 Asian                   | 3.5% 
 Black                   | 51.1%
-I                       | > 1% 
+Indian                  | > 1% 
 Pacific Islanders       | 7.1%
 Q                       | 25.6%
 U                       | > 1%
 White                   | 9% 
-Z                       | 2.4%
+Z(Not Stated)           | 2.4%
+
 ```{r}
 barplot(RacePlot)
 ``` 
+
+**Overall Sex Breakdown**
+
+Sex           |  Percentage
+-----         | -----------
+Male          | 91.1% 
+Female        | 6.8%
+Z(Not Stated) | 1.8% 
+
+```{r}
+barplot(GenderPlot)
+```
+
+**Overall Frisked Breakdown**
+
+Frisked   |  Percentage
+-----     | -----------
+Yes       | 55.7% 
+No        | 44.3%
+
+```{r}
+barplot(FriskedPlot)
+```
+
+
+
+
 
 *KEY: 
 
