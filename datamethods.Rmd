@@ -2,14 +2,14 @@
 title: "Data and Methods"
 ---
 
-The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011. The data below is broken down by variable for the overall year. 
+The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011. The data below is broken down by variable for the overall year. The variables chosen to compare to the murder rates were chosen selectively 
 
 Variable analyzed from the year 2010, 
 
 **Overall Murder rates**
 
 ```{r}
-hist(MurderRates2010ALLPCT)
+barplot(MurderRates2010ALLPCT, main = "Murder Rates 2010 All Precincts", xlab = "Murder by Precinct", ylab = "Magnitude of Murder")
 ```
 
 Variables analyzed from the year 2011 are as follows, 
@@ -19,7 +19,6 @@ Variables analyzed from the year 2011 are as follows,
 * Race (Asian, Black, White, etc.)*
 * Age 
 
-The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age. 
 
 Below is the r code for each variable tested in correlation with murder rates. 
 
@@ -34,10 +33,10 @@ Pacific Islanders       | 7.1%
 Q                       | 25.6%
 U                       | > 1%
 White                   | 9% 
-Z(Not Stated)           | 2.4%
+Z(Unknown)              | 2.4%
 
 ```{r}
-barplot(RacePlot)
+barplot(RacePlot, main = "Race Break Down", xlab = "Race", ylab = "Percentage")
 ``` 
 
 **Overall Sex Breakdown**
@@ -46,10 +45,10 @@ Sex           |  Percentage
 -----         | -----------
 Male          | 91.1% 
 Female        | 6.8%
-Z(Not Stated) | 1.8% 
+Z(Unknown)    | 1.8% 
 
 ```{r}
-barplot(GenderPlot)
+barplot(SexPLot, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
 ```
 
 **Overall Frisked Breakdown**
@@ -60,7 +59,7 @@ Yes       | 55.7%
 No        | 44.3%
 
 ```{r}
-barplot(FriskedPlot)
+barplot(FriskedPlot, main = "Frisked Break Down", xlab = "Frisked", ylab = "Percentage")
 ```
 
 

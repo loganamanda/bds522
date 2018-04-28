@@ -206,10 +206,10 @@ $(document).ready(function () {
 </div>
 
 
-<p>The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011.</p>
+<p>The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011. The data below is broken down by variable for the overall year. The variables chosen to compare to the murder rates were chosen selectively</p>
 <p>Variable analyzed from the year 2010,</p>
 <p><strong>Overall Murder rates</strong></p>
-<pre class="r"><code>hist(MurderRates2010ALLPCT)</code></pre>
+<pre class="r"><code>barplot(MurderRates2010ALLPCT, main = &quot;Murder Rates 2010 All Precincts&quot;, xlab = &quot;Murder by Precinct&quot;, ylab = &quot;Magnitude of Murder&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Variables analyzed from the year 2011 are as follows,</p>
 <ul>
@@ -218,7 +218,6 @@ $(document).ready(function () {
 <li>Race (Asian, Black, White, etc.)*</li>
 <li>Age</li>
 </ul>
-<p>The units of analysis for this project are by precinct for murder rates, frisked, sex, race, and age.</p>
 <p>Below is the r code for each variable tested in correlation with murder rates.</p>
 <p><strong>Overall Race Breakdown</strong></p>
 <table>
@@ -258,12 +257,12 @@ $(document).ready(function () {
 <td>9%</td>
 </tr>
 <tr class="even">
-<td>Z(Not Stated)</td>
+<td>Z(Unknown)</td>
 <td>2.4%</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(RacePlot)</code></pre>
+<pre class="r"><code>barplot(RacePlot, main = &quot;Race Break Down&quot;, xlab = &quot;Race&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p><strong>Overall Sex Breakdown</strong></p>
 <table>
@@ -283,12 +282,12 @@ $(document).ready(function () {
 <td>6.8%</td>
 </tr>
 <tr class="odd">
-<td>Z(Not Stated)</td>
+<td>Z(Unknown)</td>
 <td>1.8%</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(GenderPlot)</code></pre>
+<pre class="r"><code>barplot(SexPLot, main = &quot;Sex Break Down&quot;, xlab = &quot;Sex&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p><strong>Overall Frisked Breakdown</strong></p>
 <table>
@@ -309,8 +308,9 @@ $(document).ready(function () {
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(FriskedPlot)</code></pre>
+<pre class="r"><code>barplot(FriskedPlot, main = &quot;Frisked Break Down&quot;, xlab = &quot;Frisked&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The data posted below is each varibale by New York City Police Precinct.</p>
 <p>*KEY:</p>
 <ul>
 <li>Frisked: Y-yes; N-no</li>
