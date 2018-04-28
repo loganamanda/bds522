@@ -11,6 +11,7 @@ Blacks made up approximately 51.1% of the population considered in this dataset.
 Controversial law enforcement pactices create public unrest alongside public distrust in the communities which are targeted. Murder rates in New York City vary greater throughout the ~~~ but there are extremely high rates in a select few precincts which promote question of the community which those precincts cover. Seeing if there is a correlation between murder rates in these particular areas within a precinct and the magnitude alongside the demographics of individuals stopped, questioned, and frisked, is a good start to observing an association of racial discrimination by police officers.  
 
 **Hypotheses**
+
 H0: There will be no indication of murder rates predicting the magnitiude of stop, question, and frisks by Law Enforcement Precincts.
 
 H1: Historically Black/minority classified neighbors (precinct) will have a higher number of stop, question, and frisks. 
