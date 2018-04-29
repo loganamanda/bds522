@@ -22,22 +22,31 @@ Variables analyzed from the year 2011 are as follows,
 
 Below is the r code for each variable tested in correlation with murder rates. 
 
+**Overall Age Data**
+
+```{r}
+summary(age)
+```
+
+
+
 **Overall Race Breakdown**
 
-Race                    |  Percentage 
----------               | -----------
-Asian                   | 3.5% 
-Black                   | 51.1%
-Indian                  | > 1% 
-Pacific Islanders       | 7.1%
-Q                       | 25.6%
-U                       | > 1%
-White                   | 9% 
-Z(Unknown)              | 2.4%
+Race                                     |  Percentage 
+---------                                | -----------
+Asian/Pacific Islander                   | 3.5% 
+Black                                    | 51.1%
+American Indian/Alaskan Native           | > 1% 
+P- Black-hispanic                        | 7.1%
+Q- White-hispanic                        | 25.6%
+X (Unknown)                              | > 1%
+White                                    | 9% 
+Z(Other)                                 | 2.4%
 
 ```{r}
 barplot(RacePlot, main = "Race Break Down", xlab = "Race", ylab = "Percentage")
 ``` 
+
 
 **Overall Sex Breakdown**
 
@@ -45,11 +54,12 @@ Sex           |  Percentage
 -----         | -----------
 Male          | 91.1% 
 Female        | 6.8%
-Z(Unknown)    | 1.8% 
+Z(Other)      | 1.8% 
 
 ```{r}
 barplot(SexPLot, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
 ```
+
 
 **Overall Frisked Breakdown**
 
@@ -63,6 +73,29 @@ barplot(FriskedPlot, main = "Frisked Break Down", xlab = "Frisked", ylab = "Perc
 ```
 
 
+Variables Race, Sex, and Frisked by pct, 
+
+**Race by Precinct**
+
+Black and White races were analyzed for the purposes of this data description alongside the hypothesis,
+
+```{r}
+table(race,pct)
+```
+
+
+**Sex by Precinct** 
+
+```{r}
+table(sex,pct)
+```
+
+
+**Frisked by Precinct** 
+
+```{r}
+table(frisked,pct)
+```
 
 The data posted below is each varibale by New York City Police Precinct.
 
