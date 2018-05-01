@@ -57,7 +57,7 @@ Female        | 6.8%
 Z(Other)      | 1.8% 
 
 ```{r}
-barplot(SexPLot, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
+barplot(SexPlot, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
 ```
 
 
